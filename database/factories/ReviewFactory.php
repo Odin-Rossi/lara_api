@@ -28,7 +28,7 @@ class ReviewFactory extends Factory
             },
             'customer' => $this->faker->name,
             'review' => $this->faker->paragraph,
-            'star' => $this->faker->numberBetween(),
+            'star' => $this->faker->numberBetween(1,5),
         ];
     }
 }
